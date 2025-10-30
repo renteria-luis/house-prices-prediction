@@ -1,0 +1,31 @@
+Feature,Type,Origin,Description
+MSZoning,object,raw/encoded,Zoning type
+Neighborhood,object,raw/encoded,Neighborhood area
+HouseStyle,object,raw/encoded,House style
+Exterior1st,object,raw/encoded,Exterior material
+Foundation,object,raw/encoded,Foundation type
+BsmtExposure,object,raw/encoded,Basement exposure type
+GarageType,object,raw/encoded,Garage location
+GarageFinish,object,raw/encoded,Garage finish
+MoSold_cat,object,engineered,Month sold (Jan–Dec)
+MSSubClass,int64,raw/encoded,Type of house sold
+LotArea,int64,raw/encoded,Total lot size
+OverallQual,int64,raw/encoded,Overall quality (1–10)
+OverallCond,int64,raw/encoded,Overall condition (1–10)
+MasVnrArea,float64,raw/encoded,Brick or stone wall area
+BsmtFinSF1,int64,raw/encoded,Finished basement area
+TotRmsAbvGrd,int64,raw/encoded,Total rooms above ground
+Fireplaces,int64,raw/encoded,Number of fireplaces
+GarageCars,int64,raw/encoded,Garage size (cars)
+WoodDeckSF,int64,raw/encoded,Wood deck size
+BsmtFinType1_ord,int64,raw/encoded,Basement finish type (encoded)
+TotalSF,float64,engineered,Total living area (incl. basement)
+TotalBathrooms,float64,engineered,Weighted total bathrooms
+Age,int64,engineered,House age
+PorchSF,int64,engineered,Total porch area
+ComponentsQual,float64,engineered,Average quality score
+HasBsmt,int32,engineered,Has basement (1/0)
+HasGarage,int32,engineered,Has garage (1/0)
+Has2ndFloor,int32,engineered,Has second floor (1/0)
+HasPool,int32,engineered,Has pool (1/0)
+Remodeled,int32,engineered,Remodeled (1/0)
