@@ -29,6 +29,7 @@ def build_features(df):
     df['TotalSF'] = df['GrLivArea'] + 0.8 * df['TotalBsmtSF'] + df['LotFrontage'].fillna(0) * 0.1
     df['TotalBathrooms'] = (df['FullBath'] + 0.5 * df['HalfBath'] + 0.8 * (df['BsmtFullBath'] + 0.5 * df['BsmtHalfBath']))
     df['Age'] = df['YrSold'] - df['YearBuilt']
+    df.loc[df['Age'] < 0, 'Age'] = 0  # fix negative values (invalid YearBuilt > YrSold)
     df['PorchSF'] = df['OpenPorchSF'] + df['EnclosedPorch'] + df['3SsnPorch'] + df['ScreenPorch']
     df['ComponentsQual'] = df_ords_qual.mean(axis=1).round(3)
     df['HasBsmt'] = df['BsmtQual'].notna().astype(int)
