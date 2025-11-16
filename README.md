@@ -69,6 +69,7 @@ Models explored:
 - Ridge
 - Lasso
 - SVM
+- VotingRegressor
 
 Hyperparameter optimization via:
 
@@ -90,8 +91,8 @@ A `VotingRegressor` is built using the best tuned models.
 
 | Model             | CV RMSE |
 | ----------------- | ------- |
-| Gradient Boosting | $20,340.99 |
-| Voting Regressor  | $23,130.06 |
+| Voting Regressor | $20,340.99 |
+| Gradient Boosting  | $23,130.06 |
 
 ---
 
