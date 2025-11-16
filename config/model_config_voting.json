@@ -1,0 +1,32 @@
+{
+  "models": {
+    "Ridge": {
+      "alpha": 1.595623185695678,
+      "solver": "auto"
+    },
+    "Lasso": {
+      "alpha": 0.000562361326305491
+    },
+    "RandomForest": {
+      "max_depth": 20,
+      "max_features": "sqrt",
+      "min_samples_leaf": 2,
+      "min_samples_split": 5,
+      "n_estimators": 500
+    },
+    "GradientBoosting": {
+      "learning_rate": 0.014,
+      "max_depth": 3,
+      "min_samples_leaf": 2,
+      "min_samples_split": 5,
+      "n_estimators": 900,
+      "subsample": 0.8
+    },
+    "SVM": {
+      "C": 20,
+      "epsilon": 0.008,
+      "gamma": 0.001,
+      "kernel": "rbf"
+    }
+  }
+}

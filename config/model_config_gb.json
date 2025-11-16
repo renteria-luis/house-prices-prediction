@@ -1,0 +1,14 @@
+{
+  "model": {
+    "type": "GradientBoostingRegressor",
+    "params": {
+      "learning_rate": 0.026,
+      "max_depth": 3,
+      "max_features": "sqrt",
+      "min_samples_leaf": 2,
+      "min_samples_split": 5,
+      "n_estimators": 1000,
+      "subsample": 0.8
+    }
+  }
+}
