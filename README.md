@@ -33,10 +33,10 @@ Predicting house sale prices using advanced feature engineering, pipelines, and 
 ## 📊 Key Visualizations
 
 ### Distribution shift after log-transform
-![Log Transform](reports/figures/log_transform_saleprice.png)
+![Log Transform](reports/figures/EDA/02_target_distribution.png)
 
-### Model performance comparison (CV RMSE)
-![Model Comparison](reports/figures/model_cv_scores.png)
+### Model Results (Voting Regressor)
+![Model Results](reports/figures/voting/02_voting_regressor_results.png)
 
 ---
 
