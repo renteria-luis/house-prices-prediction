@@ -1,7 +1,14 @@
 import numpy as np
 import pandas as pd
 
-def build_features(df):
+def build_features(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Build engineered features for the Ames Housing dataset.
+
+    - Applies ordinal encodings for quality-related columns.
+    - Creates total area, total bathrooms, age, porch area and binary flags.
+    - Returns only the selected feature set.
+    """
     # Ordinal maps
     qual_map = {np.nan: 0, 'Po': 1, 'Fa': 2, 'TA': 3, 'Gd': 4, 'Ex': 5}
     fin_map = {np.nan: 0, 'Rec': 1, 'BLQ': 2, 'LwQ': 3, 'ALQ': 4, 'Unf': 3, 'GLQ': 4}
